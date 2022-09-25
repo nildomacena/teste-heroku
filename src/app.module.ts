@@ -11,6 +11,7 @@ import { AppService } from './app.service';
     username: 'techcasp',
     password: '21041898',
     database: 'bd_techcasp',
+    ssl: { rejectUnauthorized: false },
     entities: [],
     synchronize: true,
   })],
