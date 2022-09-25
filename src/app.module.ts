@@ -4,7 +4,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  imports: [TypeOrmModule.forRoot({
+  imports: [
+    /* TypeOrmModule.forRoot({
     type: 'postgres',
     host: 'techcasp.cw5rwj0xy7gj.sa-east-1.rds.amazonaws.com',
     port: 5432,
@@ -14,7 +15,8 @@ import { AppService } from './app.service';
     ssl: { rejectUnauthorized: false },
     entities: [],
     synchronize: true,
-  })],
+  }) */
+],
   controllers: [AppController],
   providers: [AppService],
 })
